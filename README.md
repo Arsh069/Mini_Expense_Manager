@@ -1,10 +1,10 @@
-# 💰 Mini Expense Manager
+# Mini Expense Manager
 
 A production-style full-stack application to track daily expenses with automatic categorization and anomaly detection.
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer      | Technology                              |
 |------------|------------------------------------------|
@@ -16,7 +16,7 @@ A production-style full-stack application to track daily expenses with automatic
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 
@@ -66,7 +66,7 @@ The frontend starts on **http://localhost:3000** and proxies API calls to `http:
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### Expenses
 
@@ -165,7 +165,7 @@ date,amount,vendorName,description
 
 ---
 
-## 🏗 Architecture & Design Decisions
+## Architecture & Design Decisions
 
 ### Clean Layered Architecture
 The backend follows strict layered separation: **Controller → Service → Repository**. Controllers only handle HTTP concerns (request parsing, response codes). All business logic lives in the service layer. Entities are never exposed directly; the `ExpenseMapper` converts between entities and DTOs.
@@ -194,7 +194,7 @@ All DTOs and entities use Lombok's `@Builder` for clean, readable object constru
 
 ---
 
-## 📋 Assumptions
+## Assumptions
 
 1. Vendor matching is **case-insensitive** exact match (e.g., "amazon" matches "Amazon").
 2. Category average for anomaly detection is computed across **all time** (not windowed by month).
@@ -205,7 +205,7 @@ All DTOs and entities use Lombok's `@Builder` for clean, readable object constru
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 mini-expense-manager/
@@ -268,4 +268,3 @@ mini-expense-manager/
         └── types/
             └── index.ts
 ```
-# Mini_Expense_Manager
