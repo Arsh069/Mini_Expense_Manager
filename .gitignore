@@ -1,0 +1,37 @@
+# ========================
+# Backend (Maven / Java)
+# ========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ========================
+# Frontend (Node / React)
+# ========================
+node_modules/
+build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# ========================
+# IDE & Editor
+# ========================
+.idea/
+*.iml
+.vscode/
+.eclipse/
+.settings/
+.classpath
+.project
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
